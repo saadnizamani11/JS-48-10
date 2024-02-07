@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1> Retrieving Attributes of an Image Element</h1>
+    <img src="Words.jpg" alt="">
+
+    <script>
+        var img = document.body.childNodes[3];
+        console.log(document.body.childNodes)
+        console.log(img.attributes);
+        console.log(img.attributes.src.value)
+    </script>
+</body>
+</html>
+
+<!-- [0].ownerDocument.images[0] -->

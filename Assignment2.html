@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <h1>Assignment 2: Adding and Removing List Items with Delay</h1>
+    <script>
+        var ul = document.body.childNodes[1];
+        var li = document.createElement("li");  
+        var liMaterial = document.createTextNode("List 1");
+        li.appendChild(liMaterial);
+        ul.appendChild(li);
+
+        var li = document.createElement("li");
+        var liMaterial = document.createTextNode("List 2");
+        li.appendChild(liMaterial);
+        ul.appendChild(li);
+
+        var li = document.createElement("li");
+        var liMaterial = document.createTextNode("List 3");
+        li.appendChild(liMaterial);
+        ul.appendChild(li);
+
+        var li = document.createElement("li");
+        var liMaterial = document.createTextNode("List 4");
+        li.appendChild(liMaterial);
+        ul.appendChild(li);
+
+        var li = document.createElement("li");
+        var liMaterial = document.createTextNode("List 5");
+        li.appendChild(liMaterial);
+        ul.appendChild(li);
+
+        function del1 () {
+            document.body.childNodes[1].childNodes[1].remove()
+        };
+        setTimeout (del1,2000);
+        setTimeout (del1,4000);
+        setTimeout (del1,6000);
+        setTimeout (del1,8000);
+        setTimeout (del1,10000);
+    </script>
+
+</body>
+</html>
